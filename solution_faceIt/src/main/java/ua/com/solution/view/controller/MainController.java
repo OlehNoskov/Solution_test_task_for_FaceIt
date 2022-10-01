@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/universities")
 public class MainController {
-  private final UniversityFacade universityFacade;
+    private final UniversityFacade universityFacade;
 
     public MainController(UniversityFacade universityFacade) {
         this.universityFacade = universityFacade;
@@ -35,7 +35,7 @@ public class MainController {
     }
 
     @GetMapping("/all")
-    public List <University> showAll(){
+    public List<University> showAll() {
         return universityFacade.findAll();
     }
 }
