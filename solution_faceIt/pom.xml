@@ -13,9 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>solution_faceIt</name>
     <description>solution_faceIt</description>
+
     <properties>
         <java.version>17</java.version>
+        <jackson-dataformat-csv.version>2.13.4</jackson-dataformat-csv.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -34,20 +37,25 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- mysql -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- jackson -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-csv</artifactId>
+            <version>${jackson-dataformat-csv.version}</version>
         </dependency>
     </dependencies>
 
@@ -59,7 +67,7 @@
                 <configuration>
                     <excludes>
                         <exclude>
-                            <groupId>org.projectlombok</groupId>
+                            <groupId>org.project-lombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
