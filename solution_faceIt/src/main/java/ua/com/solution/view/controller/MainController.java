@@ -26,7 +26,7 @@ public class MainController {
         String message;
         try {
             universityFacade.saveAll(multipartFile);
-            message = "Uploaded the file successfully: " + multipartFile.getOriginalFilename();
+            message = "Uploaded the file successfully: " + multipartFile.getOriginalFilename()+ "!";
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
         } catch (Exception e) {
             message = "Could not upload the file: " + multipartFile.getOriginalFilename() + "!";
