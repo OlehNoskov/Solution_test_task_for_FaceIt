@@ -9,7 +9,6 @@ import ua.com.solution.service.UniversityService;
 
 import java.util.List;
 
-
 @Service
 public class UniversityFacadeImpl implements UniversityFacade {
     private final UniversityService universityService;

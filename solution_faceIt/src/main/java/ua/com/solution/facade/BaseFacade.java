@@ -5,7 +5,7 @@ import ua.com.solution.persistence.entity.BaseEntity;
 import java.util.List;
 
 public interface BaseFacade <ENTITY extends BaseEntity> {
-    void saveAll(MultipartFile file);
+    void saveAll (MultipartFile file);
 
     List<ENTITY> findAll();
 }
