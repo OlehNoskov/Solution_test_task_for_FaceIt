@@ -9,5 +9,4 @@ class SolutionFaceItApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }
