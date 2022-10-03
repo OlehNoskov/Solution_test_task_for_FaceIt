@@ -21,7 +21,7 @@ public class UniversityServiceImpl implements UniversityService {
 
     @Override
     public void saveAll(MultipartFile file) {
-        universityRepository.saveAll(Parser.returnListUniversities(file));
+        universityRepository.saveAll(Parser.getListUniversitiesfromFile(file));
     }
 
     @Override

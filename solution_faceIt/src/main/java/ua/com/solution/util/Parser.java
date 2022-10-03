@@ -10,7 +10,7 @@ import java.io.*;
 import java.util.List;
 
 public class Parser {
-   public static List <University> returnListUniversities(MultipartFile file){
+   public static List <University> getListUniversitiesfromFile(MultipartFile file){
         try {
             InputStream initialStream = file.getInputStream();
             byte[] buffer = new byte[initialStream.available()];
