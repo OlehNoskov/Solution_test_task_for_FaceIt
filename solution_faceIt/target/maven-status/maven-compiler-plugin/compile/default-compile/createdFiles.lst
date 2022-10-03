@@ -1,0 +1,11 @@
+ua\com\solution\persistence\repository\UniversityRepository.class
+ua\com\solution\persistence\entity\BaseEntity.class
+ua\com\solution\service\impl\UniversityServiceImpl.class
+ua\com\solution\service\UniversityService.class
+ua\com\solution\util\Parser.class
+ua\com\solution\SolutionFaceItApplication.class
+ua\com\solution\view\controller\MainController.class
+ua\com\solution\persistence\repository\AbstractRepository.class
+ua\com\solution\util\ResponseMessage.class
+ua\com\solution\service\BaseService.class
+ua\com\solution\persistence\entity\University.class
