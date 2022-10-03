@@ -1,10 +1,5 @@
 package ua.com.solution.service.impl;
 
-import com.fasterxml.jackson.databind.MappingIterator;
-import com.fasterxml.jackson.dataformat.csv.CsvMapper;
-import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-
-import org.hibernate.hql.internal.ast.ParseErrorHandler;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -26,7 +21,7 @@ public class UniversityServiceImpl implements UniversityService {
 
     @Override
     public void saveAll(MultipartFile file) {
-        universityRepository.saveAll(Parser.returnListEntity(file));
+        universityRepository.saveAll(Parser.returnListUniversities(file));
     }
 
     @Override
